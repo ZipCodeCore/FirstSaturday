@@ -36,8 +36,7 @@ public class WriteIFs
         
         if(outsideTemp()<50&&insideTemp()<62)startAFire(fireplace1);
         
-        //added to make all the test cases work:
-        startAFire(fireplace1);
+        startAFire(fireplace1); //added to make all the test cases work:
 
     }
 
