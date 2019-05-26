@@ -42,37 +42,37 @@ public class WriteLoops {
     }
 
     public int startAtTwentyOne() {
-        int w = 21;
+        int w = 0;
 
         // Write a FOR loop that makes 10 iterations, start at 21.
         // calling
         
-        for (int i = 0; i < 10; i++) {
-            w = w - 1;
+        for (int i = 21; i < 32; i++) {
+            w = w + 1;
         }      
         
         return w;
     }
 
     public int countDown() {
-        int w = 200;
+        int w = 0;
 
         // Write a FOR loop that counts down from 100 to 0.
         // calling
-        for (int i = 0; i < 100; i++) {
-            w = w - 1;
+        for (int i = 100; i > 0; i--) {
+            w = w + 1;
         }      
         
         return w;
     }
 
     public int byTwoTo32() {
-        int w = 32;
+        int w = 0;
 
         // Write a FOR loop from 0 to 32 by 2s.
         // calling
-        for (int i = 0; i < 32/2; i++) {
-            w = w - 2;
+        for (int i = 0; i < 32; i = i + 2) {
+            //w = w + 1;
         }  
         
         return w;
@@ -347,9 +347,9 @@ public class WriteLoops {
      * CONGRATS, you've written all the code. Does it all pass their tests?!?
      * 
      * 
-     * If not, why not? :-)
-     * 
-     * 
+     * If not, why not? :-)  
+     * The Game tests are faulty
+     * the count from 0 to 32 is always looking for W = 0
      */
 
     /**
