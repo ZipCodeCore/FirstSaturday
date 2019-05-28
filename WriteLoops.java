@@ -178,8 +178,14 @@ public class WriteLoops {
             currentScore = gameNextScore();
             // calling
             w = w + 1;
+            System.out.println(currentScore);
             // each time through the inner loop
         }
+        // since the gameNextScore is random, ranged from 20-99,
+        // loop will definitely run once;
+        // let's say gameNextScore generated 99 everytime
+        // loop will at least run 3 time
+        // 1st: runningScore = 0; 2nd:99 ; 3rd: 198; stop before enter 4
         return w; // >= 3;
     }
 
@@ -200,7 +206,7 @@ public class WriteLoops {
         } while (runningScore < highestScore);
             // each time through the inner loop
 
-        return w >= 3;
+        return w <= 3;
     }
 
     // Write a WHILE loop that checks “serverIsRunning()” and if true
@@ -366,7 +372,7 @@ public class WriteLoops {
      * If not, why not? :-)
      * 1. one of the test has wrong answer
      * 2. one of the method used random number generator, thus make the 
-     *    output varied, the test couldn't check that.
+     *    output varied, the test didn't check that.
      */
 
     /**
