@@ -225,12 +225,13 @@ public class WriteLoops {
     // and if it is, add 7 to “i”
     public int loop50by7() {
         int w = 0;
-
-
-            // calling
-            w = w + 1;
-            // each time through the inner loop
+        int i = 7;
         
+        while (i < 50) {
+            i += 7;
+            w = w + 1;
+        }
+
         return w;
     }
 
@@ -262,12 +263,12 @@ public class WriteLoops {
     public int rewriteFooAsFor() {
         int w = 0;
         int sumOfThrees = 0;
-
- 
-            // calling
-            w = w + 1;
-            // each time through the inner loop
         
+        for (int i = 0; i < 21; i = i + 3) {
+            sumOfThrees = sumOfThrees + i;
+            w = w + 1;
+        }
+
         System.out.print("The Sum is ");
         System.out.println(sumOfThrees);
 
@@ -279,7 +280,7 @@ public class WriteLoops {
     public int rewriteFooAsWhile() {
         int w = 0;
         int sumOfThrees = 0;
-
+        int[] threes_array = { 3, 6, 9, 12, 15, 18, 21 };
  
             // calling
             w = w + 1;
@@ -301,13 +302,16 @@ public class WriteLoops {
     public int manageYardAndJunior() {
         int w = 0;
         boolean onTime = true;
-
-        // ADD YOUR CODE here.
- 
-            // be sure to call
-            w = w + 1;
-            // each time inside the loop
+        boolean yardNeedsMowed = true;
         
+        while (isSummer()) {
+            if (yardNeedsMowed) {
+               yellAtJuniorToMowLawn(); 
+               w = w + 1;
+            }
+            sendJuniorBackToSchool("sad day");
+        }
+ 
         return w;
     }
 
@@ -318,30 +322,40 @@ public class WriteLoops {
     // the array.
     public int tallyVote1() {
         int w = 0;
+        String voteTallies[] = { "Lincoln", "Washington", "Adams", "Lincoln", "Washington", "Adams", "Lincoln",
+            "Washington", "Adams", "Lincoln", "Washington", "Adams", "Roosevelt" };
         int numberOfVotes = voteTallies.length;
-
- 
-            // calling
+        
+        
+        for (String vote : voteTallies) {
+            System.out.println(vote);
             w = w + 1;
-            // each time through the inner loop
+        }
         
         return w;
+    
     }
+ 
 
     // Given an array voteTallies[], write a WHILE loop that prints out each value
     // in the array. You should declare and use an index “idx” to keep track of
     // where you are.
     public int tallyVote2() {
         int w = 0;
+        String voteTallies[] = { "Lincoln", "Washington", "Adams", "Lincoln", "Washington", "Adams", "Lincoln",
+            "Washington", "Adams", "Lincoln", "Washington", "Adams", "Roosevelt" };
         int numberOfVotes = voteTallies.length;
+        int idx = 0;
 
-
-            // calling
-            w = w + 1;
-            // each time through the inner loop
-        
+            while (idx < voteTallies.length) {
+               System.out.println(voteTallies[idx]);
+               idx += 1;
+               w = w + 1;
+            }
         return w;
-    }
+        }
+        
+    
 
     /**
      * CONGRATS, you've written all the code. Does it all pass their tests?!?
