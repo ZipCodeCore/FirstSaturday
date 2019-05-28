@@ -74,6 +74,12 @@ public class WriteLoopsTest
         assertEquals(0, writeLoo1.byTwoTo32());
     }
 
+        @Test
+    public void Test2to32Improved()
+    {
+        WriteLoops writeLoo1 = new WriteLoops();
+        assertEquals(16, writeLoo1.byTwoTo32());
+    }
     @Test
     public void TestCountDownFrom5000()
     {
@@ -109,6 +115,13 @@ public class WriteLoopsTest
     {
         WriteLoops writeLoo1 = new WriteLoops();
         assertEquals(3, writeLoo1.checkGameScore());
+    }
+    
+    @Test
+    public void TestCheckGameScoreImproved()
+    {
+        WriteLoops writeLoo1 = new WriteLoops();
+        assertTrue("Amount of loop", writeLoo1.checkGameScore() <= 3);
     }
 
     @Test
