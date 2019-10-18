@@ -71,7 +71,7 @@ public class WriteLoopsTest
     public void Test2to32()
     {
         WriteLoops writeLoo1 = new WriteLoops();
-        assertEquals(0, writeLoo1.byTwoTo32());
+        assertEquals(17, writeLoo1.byTwoTo32());
     }
 
     @Test
