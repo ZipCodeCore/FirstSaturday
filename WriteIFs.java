@@ -17,7 +17,7 @@ public class WriteIFs
         // Write an IF statement that checks “player1.isAlive()” 
         // and if that’s false, calls “displayGameOver(player1)”
         
-        if (this.isAlive(player1) == false){
+        if (isAlive(player1) == false){
             displayGameOver(player1);
         }
     }
@@ -26,7 +26,7 @@ public class WriteIFs
         // Write an IF statement that checks the 
         // “temperature(room)” and if that check is less than 70, 
         // calls “heatOn()” else calls “coolOn()”
-        if(this.tempurature(room) < 70){
+        if(tempurature(room) < 70){
             
             heatOn();
         }
@@ -45,16 +45,12 @@ public class WriteIFs
         // AND 
         // “insideTemp()” is less than 62, 
         // calls “startAFire(fireplace1)”
-        System.out.println("Before: " + this.tt_s);
-        
+
         if(outsideTemp() < 50 && insideTemp() < 62){
             startAFire(fireplace1);
         }
-        
-        System.out.println("After: " + this.tt_s);
-        System.out.println("--------------");
     }
-
+    
     public void checkFuel(double fuelLevel) {
         // Write an IF statement that checks “fuelLevel” 
         // and if that check is less than 0.08, calls “refuel()”
@@ -108,7 +104,6 @@ public class WriteIFs
     private void coolOn() {
         this.ss = "cooling";
     }
- 
     private int insideTemp() {
         return oo1;
     }
