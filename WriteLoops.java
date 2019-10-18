@@ -148,14 +148,19 @@ public class WriteLoops {
         int w = 0;
 
         // you need to use a .equals for two Strings.
+        while(gpsCurrentLocation().equals("Not home")){
+            if(gpsCurrentLocation().equals("Not home")){
+                driveSomeMore();
+            }
 
-        // calling
-        w = w + 1;
-        // each time through the inner loop
-
+            // calling
+            w = w + 1;
+            // each time through the inner loop
+        }
+        System.out.println("Honey, I'm Home!");
         return w;
-    }
 
+    }
     // Getting harder...
     // First declare and set “highestScore” to 236. Then set “currentScore” to
     // “gameNextScore()”. Then write a WHILE loop that checks "runningScore"
@@ -169,11 +174,15 @@ public class WriteLoops {
         int runningScore = 0;
 
         // do your while loop here
+        while(runningScore > highestScore){
+            if(runningScore > highestScore){
+                runningScore += currentScore;
+            }
 
-        // calling
-        w = w + 1;
-        // each time through the inner loop
-
+            // calling
+            w = w + 1;
+            // each time through the inner loop
+        }
         return w; // >= 3;
     }
 
