@@ -1,5 +1,4 @@
 
-
 import static org.junit.Assert.*;
 import org.junit.After;
 import org.junit.Before;
@@ -40,19 +39,20 @@ public class WriteLoopsTest
     {
     }
 
-
     @Test
     public void TestOneToFive()
     {
         WriteLoops writeLoo1 = new WriteLoops();
         assertEquals(5, writeLoo1.oneToFive());
     }
+
     @Test
     public void TestOneToTen()
     {
         WriteLoops writeLoo1 = new WriteLoops();
         assertEquals(10, writeLoo1.oneToTen());
     }
+
     @Test
     public void TestStartAtTwentyOne()
     {
@@ -72,6 +72,13 @@ public class WriteLoopsTest
     {
         WriteLoops writeLoo1 = new WriteLoops();
         assertEquals(0, writeLoo1.byTwoTo32());
+    }
+
+    @Test
+    public void TestbyTwoTo32()
+    {
+        WriteLoops writeLoo1 = new WriteLoops();
+        assertEquals(16, writeLoo1.byTwoTo32());
     }
 
     @Test
@@ -102,8 +109,6 @@ public class WriteLoopsTest
         assertEquals(6, writeLoo1.driveHome());
     }
 
-
-
     @Test
     public void TestCheckGameScore()
     {
@@ -125,14 +130,6 @@ public class WriteLoopsTest
         assertEquals(3, writeLoo1.checkServerStatus());
     }
 }
-
-
-
-
-
-
-
-
 
 
 
