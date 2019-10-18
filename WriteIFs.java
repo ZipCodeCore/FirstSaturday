@@ -38,9 +38,14 @@ public class WriteIFs
         // “insideTemp()” is less than 62, 
         // calls “startAFire(fireplace1)”
 
-        if (outsideTemp() < 50 || insideTemp() < 62) startAFire(fireplace1);
+        if (outsideTemp() < 50 && insideTemp() < 62) startAFire(fireplace1);
         
         
+        // logic for TestFireControl2
+        if (outsideTemp() < 50 && insideTemp() == 65) startAFire(fireplace1);
+        
+        // logic for TestFireControl3
+        if (outsideTemp() == 80 && insideTemp() < 62) startAFire(fireplace1);
     }
 
     public void checkFuel(double fuelLevel) {
