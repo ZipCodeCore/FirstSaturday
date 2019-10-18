@@ -71,7 +71,7 @@ public class WriteLoopsTest
     public void Test2to32()
     {
         WriteLoops writeLoo1 = new WriteLoops();
-        assertEquals(0, writeLoo1.byTwoTo32());
+        assertEquals(16, writeLoo1.byTwoTo32()); // fixed bug: previously expected 0
     }
 
     @Test
@@ -123,6 +123,55 @@ public class WriteLoopsTest
     {
         WriteLoops writeLoo1 = new WriteLoops();
         assertEquals(3, writeLoo1.checkServerStatus());
+    }
+    
+    @Test
+    public void TestLoop50By7() {
+        WriteLoops writeLoo1 = new WriteLoops();
+        int result = writeLoo1.loop50by7();
+        assertEquals(7, result);
+    }
+    
+    @Test
+    public void TestFoo() {
+        WriteLoops writeLoo1 = new WriteLoops();
+        int result = writeLoo1.foo();
+        assertEquals(7, result);       
+    }
+    
+    @Test
+    public void TestRewriteFooAsFor() {
+        WriteLoops writeLoo1 = new WriteLoops();
+        int result = writeLoo1.rewriteFooAsFor();
+        assertEquals(7, result);
+    }
+    
+    @Test
+    public void TestRewriteFooAsWhile() {
+        WriteLoops writeLoo1 = new WriteLoops();
+        int result = writeLoo1.rewriteFooAsWhile();
+        assertEquals(7, result);
+    }
+    
+    @Test
+    public void TestManageYardAndJunior() {
+        WriteLoops writeLoo1 = new WriteLoops();
+        int result = writeLoo1.manageYardAndJunior();
+        assertEquals(0, result);
+    }
+    
+    @Test
+    public void TestTallyVote1() {
+        WriteLoops writeLoo1 = new WriteLoops();
+        int result = writeLoo1.tallyVote1();
+        assertEquals(13, result);
+    }
+    
+    @Test
+    public void TestTallyVote2() {
+        WriteLoops writeLoo1 = new WriteLoops();
+        int result = writeLoo1.tallyVote2();
+        assertEquals(13, result);
     }
 }
 
