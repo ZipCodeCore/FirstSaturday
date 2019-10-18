@@ -82,10 +82,10 @@ public class WriteLoops {
 
         // Write a FOR loop from 1 to less than 5001 by 11s.
         for(int i = 1; i <= 5001; i+=11){
-        // calling
-        w = w + 1;
-        // each time through the loop
-    }
+            // calling
+            w = w + 1;
+            // each time through the loop
+        }
         return w;
     }
 
@@ -96,11 +96,11 @@ public class WriteLoops {
         // 0 to less than 20 and the inner one counts from 0 to 4
         for(int i = 0; i < 20;i++){
             for(int j = 0; j <= 4;j++){
-        // calling
-        w = w + 1;
-    }
-        // each time through the inner loop
-    }
+                // calling
+                w = w + 1;
+            }
+            // each time through the inner loop
+        }
         return w;
     }
 
@@ -111,12 +111,16 @@ public class WriteLoops {
         // statement inside the loop that checks the
         // loop index counter and if it’s greater than 51,
         // prints “Hello Zipcode” instead of the statement w = w + 1;
-
-        // calling
-        w = w + 1;
-        // each time through the inner loop
-
-        return w;
+        for(int i = 5; i <= 105;i++){
+            if(i > 51){
+                System.out.println("Hello Zipcode");
+            } else {
+                // calling
+                w = w + 1;
+                // each time through the inner loop
+            }
+            return w;
+        }
     }
 
     public void simpleLoops() {
