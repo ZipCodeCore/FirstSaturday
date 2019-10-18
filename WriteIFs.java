@@ -59,9 +59,7 @@ public class WriteIFs
     }
     
     
-    
-    
-        /**
+       /**
      * Constructor for objects of class WriteIFs
      */
     public WriteIFs() {
@@ -81,7 +79,7 @@ public class WriteIFs
     private void displayGameOver(boolean b) {
         this.ss = "Game Over!";
     }
-       private int tempurature(int t) {
+      private int tempurature(int t) {
         return t+2;
     }
     private void heatOn() {
@@ -91,7 +89,7 @@ public class WriteIFs
         this.ss = "cooling";
     }
 
-        private int insideTemp() {
+    private int insideTemp() {
         return oo1;
     }
     private int outsideTemp() {
