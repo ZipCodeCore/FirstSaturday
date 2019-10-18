@@ -59,7 +59,20 @@ public class WriteIFs
     }
     
     
-       /**
+       
+    
+    /**
+     * 
+     *  int x;
+        int tt_t;
+        int tt_s;
+        int oo1, oo2;
+        String ss;
+     * 
+     * 
+     * 
+     * 
+     * //**
      * Constructor for objects of class WriteIFs
      */
     public WriteIFs() {
