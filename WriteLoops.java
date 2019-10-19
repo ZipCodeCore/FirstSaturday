@@ -105,10 +105,8 @@ public class WriteLoops {
         // loop index counter and if it’s greater than 51,
         // prints “Hello Zipcode” instead of the statement w = w + 1;
         for (int i = 5; i <= 105; i++) {
-
             if (i > 51) {
                 System.out.println("Hello Zipcode");
-
             } else {
                 w = w + 1;
                 // called each time through the loop
@@ -133,6 +131,10 @@ public class WriteLoops {
             i = i - 1;
         } while (i > 0);
         // what's the primary difference between them?!?
+        // they perform the same operation but the do ... while loop will execute at least 
+        // once before the condition is checked. The while loop has to meet the condition 
+        // prior to its execution
+        
     }
 
     // Write a WHILE loop that checks “gpsCurrentLocation()”
