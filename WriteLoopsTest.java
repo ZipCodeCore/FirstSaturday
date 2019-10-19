@@ -91,8 +91,15 @@ public class WriteLoopsTest
     @Test
     public void TestHelloZipCode()
     {
+        // given
         WriteLoops writeLoo1 = new WriteLoops();
-        assertEquals(47, writeLoo1.helloZipCode());
+        int expected = 47;
+        
+        // when
+        int actual = writeLoo1.helloZipCode();
+        
+        // then
+        assertEquals(expected, actual);
     }
 
     @Test
