@@ -190,9 +190,17 @@ System.out.println("Honey, I'm Home!");
         int runningScore = 0;
 
         // do your while loop here
-
+do  {
+    if(runningScore < highestScore)    {
+    runningScore += currentScore;
+     
+     currentScore = gameNextScore();
+     w = w + 1;
+    }
+}
+    while(runningScore < highestScore);
             // calling
-            w = w + 1;
+            
             // each time through the inner loop
 
         return w >= 3;
@@ -205,14 +213,19 @@ System.out.println("Honey, I'm Home!");
     public int checkServerStatus() {
         int w = 0;
         String adminPhoneNumber = "+1 202 456 1111";
-        
+        while(serverIsRunning())    {
+            waitFor(5);
 
         // calling
         w = w + 1;
+    } if(!serverIsRunning())    {
+        sendEmergencyText("Help!", adminPhoneNumber);
+        tryServerRestart("Help!", adminPhoneNumber);
         // each time through the inner loop
         
-        return w;
-    }
+        
+    }return w;
+}
 
     // Declare an “int” i. Set i to 7.
     // Write a WHILE loop that checks “i” is less than 50,
