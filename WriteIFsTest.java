@@ -95,7 +95,7 @@ public class WriteIFsTest
         writeIFs1.oo1 = 65;
         writeIFs1.tt_s = 1;
         writeIFs1.fireplaceControl(oo);
-        assertEquals(213, writeIFs1.tt_s);
+        assertEquals(1, writeIFs1.tt_s);
     }
     @Test
     public void TestFireControl3()
@@ -105,7 +105,7 @@ public class WriteIFsTest
         writeIFs1.oo2 = 80;
         writeIFs1.tt_s = 1;
         writeIFs1.fireplaceControl(oo);
-        assertEquals(213, writeIFs1.tt_s);
+        assertEquals(1, writeIFs1.tt_s);
     }
 
 }
