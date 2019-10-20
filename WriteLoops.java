@@ -134,7 +134,7 @@ public class WriteLoops {
         // they perform the same operation but the do ... while loop will execute at least 
         // once before the condition is checked. The while loop has to meet the condition 
         // prior to its execution
-        
+
     }
 
     // Write a WHILE loop that checks “gpsCurrentLocation()”
@@ -206,6 +206,7 @@ public class WriteLoops {
         }
         if (serverIsRunning() == false) {
             sendEmergencyText("Help!", adminPhoneNumber);
+            //tryServerRestart();
         }
         return w;
     }
@@ -215,11 +216,13 @@ public class WriteLoops {
     // and if it is, add 7 to “i”
     public int loop50by7() {
         int w = 0;
-
-        // calling
-        w = w + 1;
-        // each time through the inner loop
-
+        int i = 7;
+        while (i < 50) {
+            i += 7;   
+            // calling
+            w = w + 1;
+            // each time through the inner loop
+        }
         return w;
     }
 
@@ -288,16 +291,19 @@ public class WriteLoops {
     public int manageYardAndJunior() {
         int w = 0;
         boolean onTime = true;
+        boolean yardNeedsMowed = true;
 
         // ADD YOUR CODE here.
-
-        // be sure to call
-        w = w + 1;
-        // each time inside the loop
-
+        while(isSummer()){
+            if(yardNeedsMowed) {
+                yellAtJuniorToMowLawn();
+            }  // be sure to call
+            w = w + 1;
+            // each time inside the loop
+        }
+        sendJuniorBackToSchool("First day of school");
         return w;
     }
-
     String voteTallies[] = { "Lincoln", "Washington", "Adams", "Lincoln", "Washington", "Adams", "Lincoln",
             "Washington", "Adams", "Lincoln", "Washington", "Adams", "Roosevelt" };
 
@@ -306,11 +312,12 @@ public class WriteLoops {
     public int tallyVote1() {
         int w = 0;
         int numberOfVotes = voteTallies.length;
-
-        // calling
-        w = w + 1;
-        // each time through the inner loop
-
+        for(int i = 0; i < numberOfVotes; i++) {
+            System.out.println(voteTallies[i]);
+            // calling
+            w = w + 1;
+            // each time through the inner loop
+        }
         return w;
     }
 
@@ -319,12 +326,16 @@ public class WriteLoops {
     // where you are.
     public int tallyVote2() {
         int w = 0;
+        int idx = 0;
         int numberOfVotes = voteTallies.length;
+        while (idx < numberOfVotes) { 
 
-        // calling
-        w = w + 1;
-        // each time through the inner loop
-
+            System.out.println(voteTallies[idx]);
+            idx += 1;
+            // calling
+            w = w + 1;
+            // each time through the inner loop
+        }
         return w;
     }
 
