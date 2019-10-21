@@ -1,4 +1,4 @@
-import com.sun.org.apache.xpath.internal.SourceTree;
+//import com.sun.org.apache.xpath.internal.SourceTree;
 
 import java.awt.SystemTray;
 import java.util.concurrent.ThreadLocalRandom;
@@ -18,9 +18,12 @@ public class WriteLoops {
     public int oneToFive() {
         int w = 0;
 
-        // Write a FOR loop that counts from 1 to 10.
+        // Write a FOR loop that counts from 1 to 5.
             // calling
+            for ( int i = 0; i<5 ; i++)
+            {
             w = w + 1;
+            }
             // each time through the loop
 
         // this will tell the test how many times the loop executed.
@@ -32,7 +35,10 @@ public class WriteLoops {
 
         // Write a FOR loop that counts from 1 to 10.
         // calling
-        w = w + 1;
+        for ( int i = 0; i<10 ; i++)
+            {
+            w = w + 1;
+            }
         // each time through the loop
         
         return w;
@@ -40,10 +46,14 @@ public class WriteLoops {
 
     public int startAtTwentyOne() {
         int w = 0;
+        
 
         // Write a FOR loop that makes 10 iterations, start at 21.
         // calling
-        w = w + 1;
+            for ( int i = 21 ; i<=31 ; i++)
+            {
+            w = w + 1;
+            }
         // each time through the loop
         
         return w;
@@ -54,7 +64,10 @@ public class WriteLoops {
 
         // Write a FOR loop that counts down from 100 to 0.
         // calling
-        w = w + 1;
+        for ( int i = 100 ; i>=0 ; i--)
+            {
+            w = w + 1;
+            }
         // each time through the loop
         
         return w;
@@ -65,7 +78,10 @@ public class WriteLoops {
 
         // Write a FOR loop from 0 to 32 by 2s.
         // calling
-        w = w + 1;
+        for ( int i = 0 ; i>=32 ; i+=2)
+            {
+            w = w + 1;
+            }
         // each time through the loop
         return w;
     }
@@ -75,7 +91,10 @@ public class WriteLoops {
 
         // Write a FOR loop from 1 to less than 5001 by 11s.
         // calling
-        w = w + 1;
+        for ( int i = 5000 ; i>=1 ; i-=11)
+            {
+            w = w + 1;
+            }
         // each time through the loop
         
         return w;
@@ -87,14 +106,22 @@ public class WriteLoops {
         // Write a nested FOR loop(s), where one counts from
         // 0 to less than 20 and the inner one counts from 0 to 4
                 // calling
-                w = w + 1;
+                for ( int i = 0 ; i< 20 ; i++)
+                {
+                    for ( int j = 0 ; j<= 4 ; j++)
+                    {
+                    w = w + 1;
+                    }
+               
+                }
                 // each time through the inner loop
 
         return w;
     }
 
-    public int helloZipCode() {
-        int w = 0;
+    public int helloZipCode()
+    {
+        
 
         // Write a FOR loop that counts from 5 to 105. Put an IF
         // statement inside the loop that checks the
@@ -102,13 +129,26 @@ public class WriteLoops {
         // prints “Hello Zipcode” instead of the statement w = w + 1;
 
                 // calling
-                w = w + 1;
+            int w = 0;
+            for ( int i = 5 ; i<=105 ; i++)
+            {
+                if ( i <= 51)
+                {
+                    //System.out.println("Hello Zipcode");
+                    w = w+1;
+                }
+                else 
+                {
+                    System.out.println("Hello Zipcode");
+                }
+                
             // each time through the inner loop
-        
+            }
         return w;
     }
 
-    public void simpleLoops() {
+    public void simpleLoops() 
+    {
         int i = 0;
 
         // sample while loop
@@ -188,9 +228,20 @@ public class WriteLoops {
         int w = 0;
         String adminPhoneNumber = "+1 202 456 1111";
         
+        while(serverIsRunning())
+        {
+            waitFor(5);
+            w = w + 1;
+        }
+       
+           sendEmergencyText("Help!", adminPhoneNumber);
+           tryServerRestart("Help!", adminPhoneNumber);
+           
+        
+        
 
         // calling
-        w = w + 1;
+        
         // each time through the inner loop
         
         return w;
