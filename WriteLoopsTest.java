@@ -129,7 +129,7 @@ public class WriteLoopsTest
     public void TestLoop50by7()
     {   
         WriteLoops writeLoo1 = new WriteLoops();
-        assertEquals(6, writeLoo1.loop50by7());
+        assertEquals(7, writeLoo1.loop50by7());
     }
 }
 
