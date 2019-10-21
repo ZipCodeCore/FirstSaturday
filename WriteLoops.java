@@ -64,7 +64,7 @@ public class WriteLoops {
 
         // Write a FOR loop that counts down from 100 to 0.
         // calling
-        for ( int i = 100 ; i>=0 ; i--)
+        for ( int i = 100 ; i>0 ; i--)
             {
             w = w + 1;
             }
@@ -173,11 +173,14 @@ public class WriteLoops {
         int w = 0;
 
         // you need to use a .equals for two Strings.
-
+while(gpsCurrentLocation() != "Home")
+{
             // calling
+            driveSomeMore();
             w = w + 1;
+        }
             // each time through the inner loop
-        
+        System.out.println("Honey, I’m Home!");
 
             return w;
     }
@@ -195,11 +198,13 @@ public class WriteLoops {
         int runningScore = 0;
 
         // do your while loop here
- 
+ while(runningScore < highestScore)
+    {
+     runningScore = currentScore + runningScore;
             // calling
             w = w + 1;
             // each time through the inner loop
-        
+        }  
         return w; // >= 3;
     }
 
@@ -212,10 +217,14 @@ public class WriteLoops {
         int runningScore = 0;
 
         // do your while loop here
-
+    do 
+    {
+     runningScore = currentScore + runningScore;
             // calling
             w = w + 1;
             // each time through the inner loop
+        } while(runningScore < highestScore-1) ;
+            
 
         return w >= 3;
     }
