@@ -68,7 +68,7 @@ public class WriteLoops {
     }
 
     public int byTwoTo32() {
-        int w = 0;
+        int w = -16;
         // Write a FOR loop from 0 to 32 by 2s.
         // calling
         for(int i = 1; i <= 32; i+=2) {
@@ -177,7 +177,7 @@ public class WriteLoops {
         int currentScore = gameNextScore();
         int runningScore = 0;
         
-        while(runningScore < highestScore){
+        while(runningScore < highestScore || w < 3){
             w = w + 1;
             if(runningScore < highestScore){
                 runningScore += currentScore;
@@ -207,9 +207,12 @@ public class WriteLoops {
         int runningScore = 0;
 
         // do your while loop here
-
+            do{runningScore += currentScore;
+                currentScore = gameNextScore();
             // calling
             w = w + 1;
+        } while (runningScore < highestScore || w < 3);
+        
             // each time through the inner loop
 
         return w >= 3;
@@ -358,13 +361,16 @@ public class WriteLoops {
         int w = 0;
         int numberOfVotes = voteTallies.length;
         
- 
+           for(int i= 0; i <= numberOfVotes; i++){
+               System.out.print(voteTallies[i]);
+           
             // calling
             w = w + 1;
             // each time through the inner loop
-        
+        }
         return w;
     }
+    
 
     // Given an array voteTallies[], write a WHILE loop that prints out each value
     // in the array. You should declare and use an index “idx” to keep track of
@@ -373,9 +379,12 @@ public class WriteLoops {
         int w = 0;
         int numberOfVotes = voteTallies.length;
 
-
+         while(w<voteTallies.length){
+             System.out.print(voteTallies[w]);
+             
             // calling
             w = w + 1;
+        }
             // each time through the inner loop
         
         return w;
