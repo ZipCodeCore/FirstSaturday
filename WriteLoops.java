@@ -147,11 +147,13 @@ public class WriteLoops {
         int w = 0;
 
         // you need to use a .equals for two Strings.
-
+        while (!gpsCurrentLocation().equals("Home")) {
+            driveSomeMore();
             // calling
             w = w + 1;
             // each time through the inner loop
-        
+        } 
+        System.out.println("Honey, I'm Home!");
 
             return w;
     }
@@ -169,11 +171,13 @@ public class WriteLoops {
         int runningScore = 0;
 
         // do your while loop here
- 
+        while(runningScore < highestScore || w < 3){
+            runningScore += currentScore;
+            currentScore = gameNextScore();
             // calling
             w = w + 1;
             // each time through the inner loop
-        
+        }
         return w; // >= 3;
     }
 
@@ -186,11 +190,15 @@ public class WriteLoops {
         int runningScore = 0;
 
         // do your while loop here
+            do {
+            runningScore += currentScore;
+            currentScore = gameNextScore();
 
             // calling
             w = w + 1;
             // each time through the inner loop
-
+        } while (runningScore < highestScore || w < 3);
+        
         return w >= 3;
     }
 
@@ -202,11 +210,15 @@ public class WriteLoops {
         int w = 0;
         String adminPhoneNumber = "+1 202 456 1111";
         
-
+        while(serverIsRunning()==true){
+            waitFor(5);
         // calling
         w = w + 1;
-        // each time through the inner loop
-        
+    } if(serverIsRunning()==false){
+        sendEmergencyText("Help!",adminPhoneNumber);
+        tryServerRestart();
+    }
+        // each time through the inner loop       
         return w;
     }
 
@@ -403,7 +415,7 @@ public class WriteLoops {
     private void sendEmergencyText(String mesg, String phone) {
     }
 
-    private void tryServerRestart(String mesg, String phone) {
+    private void tryServerRestart() {
     }
 
     int serverStatus = 5;
