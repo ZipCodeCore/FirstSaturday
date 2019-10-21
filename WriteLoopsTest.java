@@ -66,6 +66,8 @@ public class WriteLoopsTest
         WriteLoops writeLoo1 = new WriteLoops();
         assertEquals(100, writeLoo1.countDown());
     }
+    
+    
 
     @Test
     public void Test2to32()

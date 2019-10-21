@@ -129,10 +129,9 @@ public class WriteLoops {
                 System.out.println("Hello Zipcode");
             }
             else{
-        
-                        // calling
-                        w = w + 1;
-                    // each time through the inner loop
+                // calling
+                w = w + 1;
+                // each time through the inner loop
             }
         }
         return w;
@@ -168,7 +167,6 @@ public class WriteLoops {
              // calling
              w = w + 1;
              // each time through the inner loop
-            
         }
             System.out.println("Honey, I'm Home!");
             return w;

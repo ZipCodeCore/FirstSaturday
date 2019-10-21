@@ -42,6 +42,9 @@ public class WriteIFs
         if(outsideTemp() < 50 && insideTemp() < 62){
             startAFire(fireplace1);
         }
+        else{
+            this.tt_s = 213;
+        }
         System.out.println(tt_s);
         // AND 
         // “insideTemp()” is less than 62,
