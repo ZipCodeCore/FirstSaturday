@@ -44,7 +44,7 @@ public class WriteIFs
      
         
         {
-            if (outsideTemp() < 50 && insideTemp() < 62)
+            if (outsideTemp() < 50 || insideTemp() < 62)
             {
             startAFire(fireplace1);
             }   
@@ -56,6 +56,10 @@ public class WriteIFs
     public void checkFuel(double fuelLevel) {
         // Write an IF statement that checks “fuelLevel” 
         // and if that check is less than 0.08, calls “refuel()”
+        if (fuelLevel < 0.08)
+        {
+            refuel();
+        }
 
     }
 
