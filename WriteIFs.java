@@ -5,21 +5,27 @@
  * @author Sandeep Narayana Mangalam
  * @version 02/09/2020
  */
+
 public class WriteIFs
 {
+   int x;
+   int tt_t;
+   int tt_s;
+   int oo1, oo2;
+   String ss;
  
     public void playerDied(boolean player1) {
         // Write an IF statement that checks “player1.isAlive()” 
         // and if that’s false, calls “displayGameOver(player1)”
         
-        if (isALive(true))
-        {
-            return true;
+        if (isAlive(true)){
+        
+           System.out.println(player1);
     
         }
-        else{
-            
-        displayGameOver(player1);
+        else
+        {
+            displayGameOver(player1);
     }
     }
     
@@ -28,7 +34,7 @@ public class WriteIFs
         // “temperature(room)” and if that check is less than 70, 
         // calls “heatOn()” else calls “coolOn()”
         
-        if(temperature(room)<70)
+        if(tempurature(room)<70)
         {
             heatOn();
         }

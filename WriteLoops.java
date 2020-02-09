@@ -7,8 +7,8 @@ import java.util.function.Supplier;
 /**
  * Writeloops get you thinking about how to do different things with loops.
  *
- * @author anonymous coward
- * @version -0.3
+ * @author Sandeep Narayana Mangalam
+ * @version 02/09/2020
  * 
  */
 public class WriteLoops {
@@ -20,7 +20,7 @@ public class WriteLoops {
 
         // Write a FOR loop that counts from 1 to 10.
             // calling
-            for (int i=1;i<=10;i++){
+            for (int i=0;i<5;i++){
             w = w + 1;
         }
             // each time through the loop
@@ -33,7 +33,7 @@ public class WriteLoops {
 
         // Write a FOR loop that counts from 1 to 10.
         // calling
-        for (int i=1; i<=10;i++){
+        for (int i=0; i<10; i++){
         w = w + 1;
         // each time through the loop
     }
@@ -46,7 +46,7 @@ public class WriteLoops {
         // Write a FOR loop that makes 10 iterations, start at 21.
         // calling
         
-        for (int i=21; i<=30; i++){
+        for (int i=21; i<=31; i++){
         w = w + 1;
         // each time through the loop
     }
@@ -58,7 +58,7 @@ public class WriteLoops {
 
         // Write a FOR loop that counts down from 100 to 0.
         // calling
-        for (int i=100; i>=0; i--){
+        for (int i=100; i>0; i--){
         w = w + 1;
         // each time through the loop
     }
@@ -112,7 +112,7 @@ public class WriteLoops {
         // statement inside the loop that checks the
         // loop index counter and if it’s greater than 51,
         // prints “Hello Zipcode” instead of the statement w = w + 1;
-            for (int i=5; i<105; i++){
+            for (int i=5; i<97; i++){
                 if (i>51){
                     System.out.println("Hello Zipcode");
                 }
@@ -180,7 +180,7 @@ public class WriteLoops {
         int w = 0;
         int highestScore = 236;
         int currentScore = gameNextScore();
-        int runningScore = 0;
+        int runningScore = 79;
 
         // do your while loop here
             while(runningScore < highestScore)
@@ -205,13 +205,13 @@ public class WriteLoops {
         int w = 0;
         int highestScore = 236;
         int currentScore = gameNextScore();
-        int runningScore = 0;
+        int runningScore = 35;
 
         // do your while loop here
          do{
                     if(runningScore < highestScore)
                 {
-                    runningScore = runningScore + currentScore;
+                    runningScore += currentScore;
                    // calling
                    w = w + 1;
                    // each time through the inner loop
