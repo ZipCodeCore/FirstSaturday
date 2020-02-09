@@ -61,7 +61,10 @@ public class WriteIFs
         {
             refuel();
 
-    }
+        }
+    } 
+    
+
 
 
     
@@ -81,8 +84,8 @@ public class WriteIFs
   /**
    * Constructor for objects of class WriteIFs
    */
-  public WriteIFs()
-  {
+    public WriteIFs()
+    { 
       // initialise instance variables
       x = 0;
       tt_t = 0;
