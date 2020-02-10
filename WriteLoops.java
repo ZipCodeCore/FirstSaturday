@@ -275,12 +275,13 @@ public class WriteLoops {
     public int rewriteFooAsWhile() {
         int w = 0;
         int sumOfThrees = 0;
-
- 
+        int i = 0;
+        while (i < threes_array.length){
             // calling
+            sumOfThrees += threes_array[i];
             w = w + 1;
             // each time through the inner loop
-        
+        }
         System.out.print("The Sum is ");
         System.out.println(sumOfThrees);
 
@@ -305,11 +306,6 @@ public class WriteLoops {
             }
         }
         sendJuniorBackToSchool("First Day of School");
-        // ADD YOUR CODE here.
- 
-            // be sure to call
-            
-            // each time inside the loop
         
         return w;
     }
