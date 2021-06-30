@@ -107,5 +107,4 @@ public class WriteIFsTest
         writeIFs1.fireplaceControl(oo);
         assertEquals(1, writeIFs1.tt_s);
     }
-
 }
