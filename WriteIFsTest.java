@@ -1,5 +1,3 @@
-
-
 import static org.junit.Assert.*;
 import org.junit.After;
 import org.junit.Before;
@@ -9,8 +7,8 @@ import org.junit.Test;
  * The test class WriteIFsTest.
  *
  * @author  kyounger
- * @version 1.3
- */
+ * @version 1.2
+ * */
 public class WriteIFsTest
 {
     private static final double _0_5 = 0.5;
