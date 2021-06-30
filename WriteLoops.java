@@ -218,7 +218,7 @@ public class WriteLoops {
         }
         if(serverIsRunning() == false) {
             sendEmergencyText("Help!", adminPhoneNumber);
-            
+            tryServerRestart("Help!", adminPhoneNumber);
         }
 
         // calling
