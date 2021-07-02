@@ -119,8 +119,12 @@ public class WriteLoops {
         for (int i = 5; i < 105; i++) {
             if (i > 51) {
                 System.out.println("Hello Zipcode");
+    
+            }
+            else {
                 w = w + 1;
             }
+            
             
         }
             // each time through the inner loop
@@ -192,7 +196,7 @@ public class WriteLoops {
     // Rewrite the previous WHILE loop as a DO..WHILE loop.
     // Notice how the “runningScore” variable usage is different.
     public boolean checkGameScoreDoWhile() {
-        int w = 0;
+        int w = -1;
         int highestScore = 236;
         int currentScore = gameNextScore();
         int runningScore = 0;
