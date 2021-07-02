@@ -191,7 +191,7 @@ public class WriteLoops {
         int runningScore = 0;
             
         do{
-             runningScore = currentScore;
+             currentScore = runningScore;
              currentScore=gameNextScore();
             w = w + 1;
         }
@@ -205,7 +205,7 @@ public class WriteLoops {
             
             // each time through the inner loop
 
-        return w>= 3;
+        return w>3;
     }
 
     // Write a WHILE loop that checks “serverIsRunning()” and if true
