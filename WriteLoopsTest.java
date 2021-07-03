@@ -64,6 +64,8 @@ public class WriteLoopsTest
         WriteLoops writeLoo1 = new WriteLoops();
         assertEquals(100, writeLoo1.countDown());
     }
+    
+    
 
     @Test
     public void Test2to32()
@@ -123,4 +125,47 @@ public class WriteLoopsTest
         WriteLoops writeLoo1 = new WriteLoops();
         assertEquals(3, writeLoo1.checkServerStatus());
     }
+    
+    @Test
+    public void Testloop50by7()
+    {
+        WriteLoops writeLoo1 = new WriteLoops();
+        assertEquals(7, writeLoo1.loop50by7());
+    }
+    
+    @Test
+    public void Testfoo()
+    {
+        WriteLoops writeLoo1 = new WriteLoops();
+        assertEquals(7, writeLoo1.foo());
+    }
+    
+    @Test
+    public void TestrewriteFooAsFor()
+    {
+        WriteLoops writeLoo1 = new WriteLoops();
+        assertEquals(7, writeLoo1.rewriteFooAsFor());
+    }
+    
+    @Test
+    public void TestmanageYardAndJunior()
+    {
+        WriteLoops writeLoo1 = new WriteLoops();
+        assertEquals(0, writeLoo1.manageYardAndJunior());
+    }
+    
+    @Test
+    public void TesttallyVote1()
+    {
+        WriteLoops writeLoo1 = new WriteLoops();
+        assertEquals(13, writeLoo1.tallyVote1());
+    }
+    
+    @Test
+    public void TesttallyVote2()
+    {
+        WriteLoops writeLoo1 = new WriteLoops();
+        assertEquals(13, writeLoo1.tallyVote1());
+    }
+
 }
