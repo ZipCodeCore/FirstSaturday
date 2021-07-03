@@ -6,11 +6,23 @@
  * @version (a version number or a date)
  */
 public class WriteIFs
+
+    
+
 {
- 
+      int x = 0;
+      int tt_t = 0;
+      int tt_s = 1;
+      String ss = "";
+      int oo1 = 61;
+      int oo2 = 49;
     public void playerDied(boolean player1) {
         // Write an IF statement that checks “player1.isAlive()” 
         // and if that’s false, calls “displayGameOver(player1)”
+    
+        if (isAlive(player1)== false){
+           displayGameOver(player1);
+        }
      
     }
     
@@ -18,6 +30,9 @@ public class WriteIFs
         // Write an IF statement that checks the 
         // “temperature(room)” and if that check is less than 70, 
         // calls “heatOn()” else calls “coolOn()”
+        if (tempurature(room) < 70){
+                heatOn();
+            } else coolOn();
 
 
         
@@ -30,12 +45,18 @@ public class WriteIFs
         // AND 
         // “insideTemp()” is less than 62, 
         // calls “startAFire(fireplace1)”
+        if (outsideTemp()<50 && insideTemp()<62){
+            startAFire(fireplace1);
+            }
 
     }
 
     public void checkFuel(double fuelLevel) {
         // Write an IF statement that checks “fuelLevel” 
         // and if that check is less than 0.08, calls “refuel()”
+        if (fuelLevel < 0.08) {
+                refuel();
+            }
 
     }
 
@@ -60,12 +81,12 @@ public class WriteIFs
   public WriteIFs()
   {
       // initialise instance variables
-      x = 0;
-      tt_t = 0;
-      tt_s = 1;
-      ss = "";
-      oo1 = 61;
-      oo2 = 49;
+      int x = 0;
+      int tt_t = 0;
+      int tt_s = 1;
+      String ss = "";
+      int oo1 = 61;
+      int oo2 = 49;
   }
 
     // associated routines
