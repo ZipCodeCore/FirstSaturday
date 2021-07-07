@@ -1,0 +1,22 @@
+First Saturday Lab Oddities:
+
+
+WriteIFs
+	one of the java docs near the bottom has a space between the  * and / of the closing tag, causing the instance variable declarations to be commented out.
+
+	public void playerDied(boolean player1)  // requirement indicates “player1.isAlive()”, but the class seems to call for “isAlive(player1)”
+
+	public void fireplaceControl(Object fireplace1) // all test cases asset value of 213, which is only met if startAFire(fireplace1) has been called, which should only have happened in 2 test cases, according to my reading of the requirements
+
+
+WriteLoops
+
+  First import (import com.sun.org.apache.xpath.internal.SourceTree) seems to be failing, so I had to comment it out in order to get it to compile.
+
+  public int startAtTwentyOne() // requirements specify 10 iterations, but test case asserts 11
+
+  public int countDown() // requirements specify for loop should count from 100 to 0 (which sounds like 101 cases, both ends inclusive), but test case asserts 100
+
+  public int byTwoTo32() // requirements specify counting from 0 to 32 by 2s, but test case asserts 0 iterations.
+
+  public int checkGameScore() // this one usually passes, but because of the random element, it sometimes still fails.  I didn’t bother adapting it, because I have had multiple runs where all the tests pass.
