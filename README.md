@@ -1,6 +1,7 @@
 # First Saturday
 
-First weekend lab. Overall idea is to read the code, read the tests, and then write some code to pass all the tests.
+This lab to be done over the first weekend. 
+Overall idea is to read the code, read the tests, and then write some code to pass all the tests.
 
 Be sure to commit all your changes multiple times as you're working on the lab.
 
