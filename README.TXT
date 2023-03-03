@@ -10,10 +10,10 @@ and LOOPS (WHILE, DO WHILE, and FOR).
 You will need to read the TEST classes first, to get a feel for what you have to write
 for the CODE classes.
 
-Work through code class WriteIFs.java, follow the directions for each method. 
+Work through code class src.main.java.WriteIFs.java, follow the directions for each method.
 Run All Tests on the class until you pass them all.
 
-Work through code class WriteLoops.java, follow the directions for each method. 
+Work through code class src.main.java.WriteLoops.java, follow the directions for each method.
 Run All Tests on the class until you pass them all. For each of the loop methods,
 you need to put the code about w = w + 1; inside of the loops. It lets the test know how
 many iterations of the loop your code did. This data is used to make sure you passed the tests.

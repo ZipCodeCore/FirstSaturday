@@ -1,3 +1,5 @@
+package src.main.java;
+
 import com.sun.org.apache.xpath.internal.SourceTree;
 
 import java.awt.SystemTray;
@@ -336,7 +338,7 @@ public class WriteLoops {
     private int x;
 
     /**
-     * Constructor for objects of class WriteLoops
+     * Constructor for objects of class src.main.java.WriteLoops
      */
     public WriteLoops() {
         // initialise instance variables

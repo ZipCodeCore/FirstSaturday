@@ -1,6 +1,7 @@
+package src.main.java;
 
 /**
- * Write a description of class WriteIFs here.
+ * Write a description of class src.main.java.WriteIFs here.
  *
  * @author (your name)
  * @version (a version number or a date)
@@ -55,7 +56,7 @@ public class WriteIFs
 
 
   /**
-   * Constructor for objects of class WriteIFs
+   * Constructor for objects of class src.main.java.WriteIFs
    */
   public WriteIFs()
   {

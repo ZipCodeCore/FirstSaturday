@@ -1,10 +1,12 @@
+package src.test.java;
+
 import static org.junit.Assert.*;
 import org.junit.After;
 import org.junit.Before;
 import org.junit.Test;
 
 /**
- * The test class WriteLoopsTest.
+ * The test class src.test.java.WriteLoopsTest.
  *
  * @author  kyounger
  * @version 1.2
@@ -12,7 +14,7 @@ import org.junit.Test;
 public class WriteLoopsTest
 {
     /**
-     * Default constructor for test class WriteLoopsTest
+     * Default constructor for test class src.test.java.WriteLoopsTest
      */
     public WriteLoopsTest()
     {
