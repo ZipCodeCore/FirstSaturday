@@ -44,15 +44,15 @@ public class WriteIFs
     
     /**
      *  Pay no attention to the code below this point.
-     * 
+     *
      * 
      * instance variables
-     * / 
-   int x;
-   int tt_t;
-   int tt_s;
-   int oo1, oo2;
-   String ss;
+     */
+    public int x;
+    public int tt_t;
+    public int tt_s;
+    public int oo1, oo2;
+    public String ss;
 
 
   /**

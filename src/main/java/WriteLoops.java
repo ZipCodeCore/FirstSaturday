@@ -1,10 +1,6 @@
 package src.main.java;
 
-import com.sun.org.apache.xpath.internal.SourceTree;
-
-import java.awt.SystemTray;
 import java.util.concurrent.ThreadLocalRandom;
-import java.util.function.Supplier;
 
 /**
  * Writeloops get you thinking about how to do different things with loops.
@@ -335,7 +331,7 @@ public class WriteLoops {
      * all the examples interesting.
      */
     // instance variables - replace the example below with your own
-    private int x;
+    public int x;
 
     /**
      * Constructor for objects of class src.main.java.WriteLoops
@@ -361,11 +357,16 @@ public class WriteLoops {
     private int scr = 31;
 
     private int gameNextScore() {
-        return this.scr = this.scr + ThreadLocalRandom.current().nextInt(20, 99 + 1);
+
+// nextInt is normally exclusive of the top value,
+// so add 1 to make it inclusive
+
+        return this.scr += ThreadLocalRandom.current().nextInt(20, 99 + 1);
     }
 
     private void yellAtJuniorToMowLawn() {
-        /* dammit, mow the yard */}
+        /* dammit, mow the yard */
+    }
 
     private void sendJuniorBackToSchool(String timeForSchool) {
         if (!timeForSchool.equalsIgnoreCase("First Day of School")) {
