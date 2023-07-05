@@ -1,4 +1,3 @@
-package src.main.java;
 
 /**
  * Write a description of class src.main.java.WriteIFs here.
