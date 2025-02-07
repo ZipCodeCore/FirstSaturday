@@ -1,5 +1,7 @@
 # First Saturday
 
+`fork` this repository and `clone` it to your local machine.
+
 This lab used to be done over the first weekend. Now, you get to do it on the second day.
 Overall idea is to read the code, read the tests, and then write some code to pass all the tests.
 
